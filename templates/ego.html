@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+        <div class="container vertical-center">
+            <div class="row align-items-center">
+                <div class="col-sm-3">
+                    <a href={{ url_for('mage') }}><button type="button" class="btn btn-dark">mage</button></a>
+                </div>
+
+                <div class="col-sm-3">
+                    <a href={{ url_for('gwm') }}><button type="button" class="btn btn-dark">gwm</button></a>
+                </div>
+
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-dark">soon</button>
+                </div>
+
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-dark">soon</button>
+                </div>
+            </div>
+        </div>
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container align-items-center">
+        <div>
+            <h3><i>this is a map generator</i></h3>
+        </div>
+
+        <div>
+            <br><br>
+        </div>
+
+        <div>
+            <form action="/mage_run_template" method="post">
+                <select name="size">
+                    <option value="32" selected>small</option>
+                    <option value="48">medium</option>
+                    <option value="64">large</option>
+                </select>
+                <br>
+                <a href={{ url_for('mage_run_template') }} target="blank"><button class="btn btn-success" type="submit">run mage</button></a>
+            </form>
+        </div>
+
+        <div>
+            <br><br>
+        </div>
+
+        <div>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_about" role="button" aria-expanded="false" aria-controls="collapse_about">about</button>
+        </div>
+
+        <div class="collapse" id="collapse_about">
+            <div class="card card-body">
+                <h4><i><b>why?</b></i></h4>
+                <br>
+                <p class="text-justify">this whole website has deep roots in my passion for discovering the works behind things that seem simple or that we take for granted. it`s the only worthwhile
+                thing i`ve ever done.<br><br>
+                i wish to make this as organic as possible, without the knicks and knacks of modern, highly marketed "apps" that lurk the vastness of the internet.
+                that`s why it`s called "ego": it`s <i>me</i>.<br><br>trivia: during the production process, i kept calling this "project ego" and i was even thinking of making it the official name of the website.
+                at one point i even searched online to see wether i risked receiving a copyright infringement and i must admit that i had a pleasant surprise: it seems that "project ego"
+                was also the initial name of <i>fable</i>, one of my favourite videogames, while it was in development more than fifteen years ago. nice.</p><br><br><br>
+                <h4><i><b>how?</b></i></h4>
+                <br>
+                <p class="text-justify">it`s just simple html and python code glued together by the flask framework. there`s also some bootstrap functionality and a little css customisation.</p><br><br><br>
+                <h4><i><b>what for?</b></i></h4>
+                <br>
+                <p class="text-justify">this is my portfolio; my legacy, so to speak. it`s a catalog of achievements, the results of my efforts. this is all made from passion, not for monetary gain. i`ve always
+                believed that the things you do for money stop being pleasant.<br><br>therefore, i invite you to explore this website and come back to it, as it will grow. who knows, maybe one day i will actually
+                finish <i>passers by the wells</i> and you`ll be able to play it.<br><br>thank you for your time.</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p class="text-justify"><i>iti multumesc, maria, pentru ca mi-ai fost scara, umbrela, paravan si lumina in intuneric.</i></p>
+            </div>
+        </div>
+
+        <div>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_disclaimer" role="button" aria-expanded="false" aria-controls="collapse_disclaimer">contact</button>
+        </div>
+
+        <div class="collapse" id="collapse_disclaimer">
+            <div class="card card-body">
+                <p class="text-justify">for any questions, complaints or suggestions, please feel free to contact me at mr.sr60@yahoo.com</p>
+            </div>
+        </div>
+
+        <div>
+            <br><br>
+        </div>
+
+        <div>
+            <a href={{ url_for('homepage') }}><button class="btn btn-secondary">home</button></a>
+        </div>
+    </div>
+{% endblock %}

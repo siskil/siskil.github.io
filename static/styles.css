@@ -1,0 +1,86 @@
+body {
+    background-image: linear-gradient(#c1c1c1, #424242);
+    min-height: 100vh;
+}
+
+button {
+    font-size: 24px;
+    margin: 10px;
+    border-radius: 2px;
+    width: 100px;
+}
+
+.grid-container {
+	align-content: center;
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 10px;
+	background-color: DarkGray;
+	flex-direction: column;
+	margin: 30px;
+	border-radius: 30px;
+	border: 3px solid white;
+}
+
+.grid-container > div {
+	align-content: center;
+}
+
+.container {
+    text-align: center;
+    align-content: center;
+    display: grid;
+    }
+
+.btn-dark {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 3px;
+    background-color: #adadad;
+}
+
+.btn-dark:hover {
+    background-color: #111111;
+}
+
+.page_title {
+    font-size: 60px;
+    color: black;
+}
+
+.page_subtitle {
+    font-size: 25px;
+    color: black;
+}
+
+.vertical-center {
+    min-height: 70%;
+    min-height: 70vh;
+    max-height: 80%;
+    align-items: center;
+}
+
+.height-limit {
+    max-height: 20%;
+}
+
+.run-mage {
+    font-size: 35px;
+}
+
+.jumbotron {
+    background-image: linear-gradient(to left, #424242, #a3a3a3,  #424242);
+    color: #424242;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+
+

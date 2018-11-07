@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container">
+
+        <div class="row align-items-center">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_about" role="button" aria-expanded="false" aria-controls="collapse_about">about</button>
+        </div>
+
+        <div class="collapse" id="collapse_about">
+            <div class="card card-body">
+                <p class="text-justify">grapefruit`s white membrane. as bitter as it gets. soon </p>
+            </div>
+        </div>
+
+
+        <div class="row align-items-center">
+            <a href={{ url_for('homepage') }}><button class="btn btn-secondary">home</button></a>
+        </div>
+    </div>
+
+
+{% endblock %}
